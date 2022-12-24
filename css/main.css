@@ -1374,6 +1374,11 @@ textarea {
   border-bottom: 1px solid #eeeeee;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__text--padding {
+    padding-top: 37px;
+  }
+}
 .portfolio__title {
   font-size: 18px;
   line-height: 2;
