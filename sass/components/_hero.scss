@@ -1,0 +1,100 @@
+.hero {
+    display: flex;
+    background-color: $main-background-color;
+
+    text-align: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .background-hero {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/background-hero-mob.jpg);
+                height: 400px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-hero {
+                background-image: url(/images/background-hero-mob@2x.jpg);
+            }
+        }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .background-hero {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/background-hero-tab.jpg);
+            height: 400px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-hero {
+                background-image: url(/images/background-hero-tab@2x.jpg);
+            }
+        }
+}
+
+@media screen and (min-width: 769px) {
+    .background-hero {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(/images/background-hero-web.jpg);
+                height: 600px;
+        }
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .background-hero {
+                background-image: url(/images/background-hero-web@2x.jpg);
+            }
+        }
+}
+
+.hero__title {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+font-weight: 900;
+font-size: 26px;
+line-height: calc(42 / 26);
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: $primary-white-color;
+max-width: 696px;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 360px;
+}
+
+@media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+}  
+}
+
+.hero__button {
+    display: inline-block;
+    border: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    min-width: 216px;
+    padding: 10px 24px;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover, &:focus {color: $accent-color; background-color: $primary-white-color;}
+}

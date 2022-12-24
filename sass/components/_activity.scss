@@ -1,0 +1,32 @@
+.activity {
+    @media screen and (max-width: 1199px) {display: none;
+    }
+    padding-top: 0;
+
+    &__header {font-size: 36px;
+        line-height: calc(42 / 36);
+        text-align: center;
+    
+        margin-bottom: 50px;}
+
+    &__list {display: flex;
+        align-content: space-between;}
+
+    &__item {position: relative;}
+
+    &__item:not(:last-child) {margin-right: 30px;}
+
+    &__text {position: absolute;
+        bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+    
+        font-size: 14px;
+        font-weight: 700;
+        line-height: calc(16 / 14);
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary-white-color;
+        background-color: rgba(47, 48, 58, 0.8);}
+}
