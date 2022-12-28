@@ -2,15 +2,25 @@
    display: flex;
    flex-wrap: wrap;
    margin-top: 30px;
+   justify-content: center;
 
     &__title {font-size: 28px;
         line-height: calc(33 / 28);
-        text-align: center;}
+        text-align: center;
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: calc(42 / 36);
+    }
+    }
 
-    &__item:nth-child(odd) {margin-right: 30px;}
+    @media screen and (max-width: 479px) {
+    &__item:not(:last-child) {margin-bottom: 30px;}
+    }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
     &__item:nth-child(-n + 4) {margin-bottom: 30px;}
+    &__item:nth-child(odd) {margin-right: 30px;}
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {

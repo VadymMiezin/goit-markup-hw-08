@@ -22,6 +22,7 @@
 
     @media screen and (min-width:768px) and (max-width: 1199px) {
     line-height: calc(16 / 14);
+    width: 232px;
     }
 }
 
@@ -44,8 +45,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .tablet-flex {
     display: flex;
-    margin-left: 76px;
-    margin-right: 89px;}
+    margin-left: 76px;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -117,7 +117,7 @@
 
     @media screen and (min-width: 1200px) {
         margin-top: 0;
-        margin-left: 93px;
+        margin-left: auto;
         text-align: left;
     }
 
