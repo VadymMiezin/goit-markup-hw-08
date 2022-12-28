@@ -973,17 +973,19 @@ textarea {
     line-height: 1.1666666667;
   }
 }
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 455px) {
   .clients__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 450px) and (max-width: 480px) {
-  .clients__item:nth-child(-n+4) {
-    margin-bottom: 30px;
-  }
   .clients__item:nth-child(odd) {
     margin-right: 5px;
+  }
+}
+@media screen and (min-width: 455px) and (max-width: 480px) {
+  .clients__item:nth-child(-n+4) {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
