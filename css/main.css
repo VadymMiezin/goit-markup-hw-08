@@ -561,7 +561,7 @@ img {
 }
 .form__link {
   color: #2196f3;
-  margin-left: 2px;
+  margin-left: 3px;
 }
 
 .form__input {
@@ -664,7 +664,7 @@ textarea {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 7px;
+  margin-right: 8px;
   border: 2px solid #212121;
   border-radius: 4px;
 }
@@ -973,9 +973,17 @@ textarea {
     line-height: 1.1666666667;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 449px) {
   .clients__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 480px) {
+  .clients__item:nth-child(-n+4) {
+    margin-bottom: 30px;
+  }
+  .clients__item:nth-child(odd) {
+    margin-right: 5px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -1044,6 +1052,8 @@ textarea {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .footer__logo {
@@ -1064,7 +1074,11 @@ textarea {
   font-size: 14px;
   line-height: 1.7142857143;
   color: #ffffff;
-  margin-bottom: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .address {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .address {
@@ -1080,10 +1094,12 @@ textarea {
 .address__link {
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  margin-bottom: 12px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address__link--last {
+  margin-bottom: 0;
 }
 .address__link:hover, .address__link:focus {
   color: #2196f3;
@@ -1115,6 +1131,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .social-networks__header {
     margin-left: 70px;
+    margin-top: 12px;
   }
 }
 
@@ -1178,7 +1195,7 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .mailing {
-    margin-top: 0;
+    margin-top: 12px;
     margin-left: auto;
     text-align: left;
   }

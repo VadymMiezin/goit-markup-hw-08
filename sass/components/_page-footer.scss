@@ -1,4 +1,6 @@
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $main-background-color;
 
     &__logo {
@@ -18,7 +20,9 @@
     line-height: calc(24 / 14);
     color: $primary-white-color;
 
+   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+   }
 
     @media screen and (min-width:768px) and (max-width: 1199px) {
     line-height: calc(16 / 14);
@@ -34,10 +38,11 @@
     color: rgb(255, 255, 255, 0.6);
 
     display: inline-block;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    margin-bottom: 12px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--last {margin-bottom: 0;}
 
     &:hover, &:focus {color: $accent-color;}
 }
@@ -60,6 +65,7 @@
 
     @media screen and (min-width: 1200px) {
     margin-left: 70px;
+    margin-top: 12px;
     }
 
     margin-bottom: 20px;
@@ -116,7 +122,7 @@
     margin-top: 60px;
 
     @media screen and (min-width: 1200px) {
-        margin-top: 0;
+        margin-top: 12px;
         margin-left: auto;
         text-align: left;
     }
